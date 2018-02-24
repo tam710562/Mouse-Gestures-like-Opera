@@ -1214,7 +1214,7 @@
                 }
                 return parent.hasVScrollBar();
             }).eq(0);
-        return position === 'fixed' || !vScrollBarParent.length ? $(this.get(0).ownerDocument.body || document.body) : vScrollBarParent;
+        return position === 'fixed' || !vScrollBarParent.length ? $('html, body') : vScrollBarParent;
     };
 
 
